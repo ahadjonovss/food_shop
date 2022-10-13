@@ -10,9 +10,9 @@ Widget tab_container(TabBarBase base){
     padding: EdgeInsets.all(6),
     height: 36,
     width: 80,
-    decoration: const BoxDecoration(
-      borderRadius: BorderRadius.all(Radius.circular(30)),
-      color: Colors.white,
+    decoration:BoxDecoration(
+      borderRadius:const BorderRadius.all(Radius.circular(30)),
+      color: base.isSelected?Colors.yellow.shade600:Colors.white,
     ),
     child: Center(
       child: Container(

@@ -47,9 +47,18 @@ class _HomePageState extends State<HomePage> {
                   width: 400,
                   child: ListView.builder(
                     itemCount: 5,
-                    itemBuilder: (context, index) => tab_container(tabbarbase[index]) ,
+                    itemBuilder: (context, index) => InkWell(
+                      onTap:(){
+                        setState(() {
+                          for(int i=0;i<tabbarbase.length;i++){
+                            tabbarbase[i].isSelected=false;
+                          }
+                          tabbarbase[index].isSelected=!tabbarbase[index].isSelected;
+                        });
+                      } ,
+                        child: tab_container(tabbarbase[index])) ,
                   scrollDirection: Axis.horizontal,),
-                ) )
+                ) ), //TabBar
 
 
 
