@@ -63,6 +63,10 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/images/foods/chicken/
+    - assets/images/foods/ice_cream/
+    - assets/images/foods/pizza/
+    - assets/images/foods/salad/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
