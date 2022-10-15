@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                 right: 20,
                 top: 300,
                   child:Container(
-                    height: 220,
+                    height: 190,
                     width: 170,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       children: [
                         Container(
-                          height: 180,
+                          height: 130,
                           width: 170,
                           child: Stack(
                           clipBehavior: Clip.none,
@@ -98,13 +98,25 @@ class _HomePageState extends State<HomePage> {
                                 left: 30,
                                 child: Text("Something is here",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),)),
                             Positioned(
-                                top: 90,
-                                left: 30,
-                                child: Text("Something is here",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),))
+                                top: 110,
+                                left: 40,
+                                child: Text("Something is here",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w600,color: Colors.grey),))
 
                           ],
                       ),
                         ),
+                        Expanded(
+                            child:Container(
+                              margin: EdgeInsets.only(left: 8,top: 8,right: 8),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("\$24",style: TextStyle(fontSize: 16),),
+                                  Icon(Icons.favorite_outline)
+
+                                ],
+                              ),
+                            ) )
                       ]
                     ),
 
